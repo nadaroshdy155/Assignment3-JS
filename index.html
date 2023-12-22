@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+    src="https://kit.fontawesome.com/8a33f6dbf4.js"
+    crossorigin="anonymous"
+  ></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans&family=Amatic+SC:wght@400;700&family=Inter:wght@400;700&family=Montserrat:wght@400;800&family=Open+Sans:wght@700&family=Pacifico&family=Poppins&family=Roboto:wght@300;400&family=Source+Sans+3:wght@600&display=swap"
+      rel="stylesheet"
+    />
+   
+  </head>
+  <body>
+    <div class="home pt-5 pb-5">
+        <section class="container-fluid text-center">
+          <h1>Bookmarker</h1>
+        </section>
+        <hr />
+        <section class="text-center d-flex justify-content-md-center fs-4">
+            <i class="fa-solid fa-bookmark"></i>
+            
+                Bookmark Your Favorite Websites
+
+            <i class="fa-solid fa-bookmark"></i>
+        </section>
+        <section class="container m-5 d-flex align-content-center flex-wrap">
+            <label for="siteNameInput" class="my-2">Site Name :</label>
+            <input type="text" placeholder="Bookmark Name" class="form-control mb-3" id="siteNameInput">
+            <label for="siteUrlInput" class="my-2">Site Url :</label>
+            <input type="text" placeholder="Website URL" class="form-control mb-3" id="siteUrlInput">
+
+            <button class="btn btn-outline-light bg-danger px-5" onclick="addURL()">Submit</button>
+
+
+            <table class="table text-white text-center my-5">
+                <thead>
+                  <th>Index</th>
+                  <th>Website Name </th>
+                  <th>Visit</th>
+                  <th>Delete</th>
+                </thead>
+                <tbody id="tBody">
+              
+                </tbody>
+              </table>
+        </section>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
